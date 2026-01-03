@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Bell Track — A Simple Workout Log</title>
+
+  <meta name="description" content="Bell Track is a simple workout log designed for kettlebell and EMOM-style training. Log your sets quickly, stay consistent, and see your progress over time — without distractions or complexity.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #3C029F;
+      --surface: #1B0147;
+      --text-primary: #FFFFFF;
+      --text-secondary: #d9dce3;
+      --accent: #fff; 
+      --border: #2A2F39;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Inter, -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--text-primary);
+      line-height: 1.6;
+    }
+
+    header {
+      padding: 48px 20px 12px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 32px;
+      margin: 0 0 8px;
+      font-weight: 700;
+    }
+
+    header p {
+      color: var(--text-secondary);
+      max-width: 520px;
+      margin: 0 auto;
+      font-size: 16px;
+    }
+
+    .card {
+      max-width: 720px;
+      margin: 28px auto;
+      background: var(--surface);
+      border-radius: 16px;
+      padding: 24px 28px;
+      border: 1px solid var(--border);
+    }
+
+    h2 {
+      margin-top: 0;
+      font-size: 18px;
+    }
+
+    ul {
+      margin: 8px 0 0;
+      padding-left: 18px;
+      color: var(--text-secondary);
+    }
+
+    .footer {
+      max-width: 720px;
+      margin: 24px auto 40px;
+      text-align: center;
+      color: var(--text-secondary);
+      font-size: 14px;
+    }
+
+    a {
+      color: var(--accent);
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .email {
+      margin-top: 4px;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Bell Track</h1>
+  <p>A simple workout log designed for kettlebell and EMOM-style training. Log your sets quickly, stay consistent, and see your progress over time — without distractions or complexity.</p>
+</header>
+
+<section class="card">
+  <h2>Track what matters</h2>
+  <ul>
+    <li>Exercise or set name</li>
+    <li>Weight (single or double)</li>
+    <li>Rounds or reps</li>
+    <li>Notes</li>
+    <li>Date</li>
+  </ul>
+</section>
+
+<section class="card">
+  <h2>Support</h2>
+  <p>If you have questions, feedback, or need help, <a href="lexinamer@gmail.com">reach out anytime.</a></p>
+</section>
+
+<div class="footer">
+  © <span id="year"></span> Bell Track • bell-track.com
+</div>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
